@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <meta name="description" content="Professional resume">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+        <div class="container header-grid">
+            <div class="identity">
+                <h1 id="name">Your Name</h1>
+                <p id="tagline">Your Title • Your Location</p>
+                <nav class="contact" aria-label="Contact">
+                    <ul>
+                        <li><a id="email" href="mailto:you@example.com">you@example.com</a></li>
+                        <li><a id="phone" href="tel:+10000000000">+1 (000) 000-0000</a></li>
+                        <li><a id="website" href="#" rel="me">yourwebsite.com</a></li>
+                        <li><a id="linkedin" href="#" rel="me">LinkedIn</a></li>
+                        <li><a id="github" href="#" rel="me">GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="actions">
+                <button id="theme-toggle" class="btn" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+                <button id="print" class="btn" aria-label="Print or save as PDF" title="Print / Save as PDF">🖨️</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="container" role="main">
+        <section class="summary" aria-labelledby="summary-heading">
+            <h2 id="summary-heading">Summary</h2>
+            <p>Brief professional summary highlighting your core strengths, domain expertise, and key accomplishments. Tailor this to your target roles.</p>
+            <ul class="highlights">
+                <li>Key achievement or capability one</li>
+                <li>Key achievement or capability two</li>
+                <li>Key achievement or capability three</li>
+            </ul>
+        </section>
+
+        <section class="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="chips" id="skills-list">
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">React</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">AWS</span>
+            </div>
+        </section>
+
+        <section class="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
+            <article class="role">
+                <header class="role-header">
+                    <h3 class="role-title">Senior Software Engineer</h3>
+                    <div class="meta">
+                        <span class="company">Company Name</span>
+                        <span class="spacer">•</span>
+                        <span class="location">City, ST</span>
+                        <span class="spacer">•</span>
+                        <time class="dates" datetime="2022-01">Jan 2022</time>
+                        <span>–</span>
+                        <time class="dates" datetime="2025-09">Present</time>
+                    </div>
+                </header>
+                <ul>
+                    <li>Led X to achieve Y, resulting in Z% improvement.</li>
+                    <li>Architected and delivered feature A using B and C.</li>
+                    <li>Mentored N engineers and established best practices.</li>
+                </ul>
+                <div class="stack chips">
+                    <span class="chip">React</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">PostgreSQL</span>
+                </div>
+            </article>
+
+            <article class="role">
+                <header class="role-header">
+                    <h3 class="role-title">Software Engineer</h3>
+                    <div class="meta">
+                        <span class="company">Company Name</span>
+                        <span class="spacer">•</span>
+                        <span class="location">City, ST</span>
+                        <span class="spacer">•</span>
+                        <time class="dates" datetime="2019-07">Jul 2019</time>
+                        <span>–</span>
+                        <time class="dates" datetime="2021-12">Dec 2021</time>
+                    </div>
+                </header>
+                <ul>
+                    <li>Delivered feature D impacting E users, improving metric F by G%.</li>
+                    <li>Optimized service latency by H% via I and J.</li>
+                    <li>Collaborated cross-functionally with Design, PM, and QA.</li>
+                </ul>
+                <div class="stack chips">
+                    <span class="chip">Python</span>
+                    <span class="chip">Django</span>
+                    <span class="chip">Redis</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <article class="project">
+                <header class="project-header">
+                    <h3 class="project-title">Project Name</h3>
+                    <a class="project-link" href="#" target="_blank" rel="noopener">Link</a>
+                </header>
+                <p>One-liner describing what the project does and why it matters.</p>
+                <ul>
+                    <li>Notable technical detail or outcome</li>
+                    <li>Another highlight</li>
+                </ul>
+                <div class="stack chips">
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">Next.js</span>
+                    <span class="chip">Vercel</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="education" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <article class="edu">
+                <h3 class="edu-title">B.S. in Computer Science</h3>
+                <div class="meta">
+                    <span class="school">University Name</span>
+                    <span class="spacer">•</span>
+                    <span class="location">City, ST</span>
+                    <span class="spacer">•</span>
+                    <time class="dates" datetime="2015-08">2015</time>
+                    <span>–</span>
+                    <time class="dates" datetime="2019-05">2019</time>
+                </div>
+            </article>
+        </section>
+
+        <section class="extras" aria-labelledby="extras-heading">
+            <h2 id="extras-heading">Awards & Certifications</h2>
+            <ul>
+                <li>Certification or award name — Issuer (Year)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer container" role="contentinfo">
+        <p>© <span id="year"></span> Your Name</p>
+    </footer>
+</body>
+</html>
+
